@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bruno+Ace+SC&family=Dancing+Script&family=Honk&family=Lobster&family=Overpass:wght@100..900&family=Protest+Guerrilla&family=Teko:wght@700&display=swap');
+
+:root {
+  background-color: rgb(250, 249, 249);
+  padding: 0rem;
+  margin: 0rem;
+  --teko: 'Teko', sans-serif;
+  --overpass: 'Overpass', sans-serif;
+  --lobster: 'Lobster', sans-serif;
+  --dancing: 'Dancing Script', cursive;
+}
+body {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+}

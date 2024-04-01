@@ -1,0 +1,39 @@
+header {
+  min-height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--overpass);
+  /* border: 1px solid; */
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.logo {
+  /* border: 1px solid; */
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > button > a > img {
+  height: 7rem;
+  width: 9rem;
+}
+.logo > button > a > img:hover {
+  cursor: pointer;
+}
+.navLinks {
+  display: flex;
+  min-width: 20rem;
+  justify-content: space-around;
+  flex-direction: row;
+  /* border: 1px solid; */
+}
+.navLinks > a {
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+.navLinks > a:hover {
+  text-decoration: underline;
+}

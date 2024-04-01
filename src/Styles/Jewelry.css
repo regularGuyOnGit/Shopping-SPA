@@ -1,0 +1,54 @@
+.jewel {
+  /* border: 1px solid; */
+  padding: 1rem;
+  background-color: rgb(255, 253, 253);
+}
+.jewelItems {
+  /* border: 1px solid; */
+  padding: 1rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.jewelItems > div {
+  /* border: 1px solid; */
+  width: 17rem;
+  height: 15rem;
+  /* border: 1px solid red; */
+}
+
+.jewelItems > div > .Image {
+  width: 100%;
+  height: 70%;
+}
+.jewelItems > div > .Image > img {
+  width: 100%;
+  height: 100%;
+}
+.priceAndRatings {
+  /* background-color: blue; */
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.addToCart {
+  /* background-color: pink; */
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jewelMore {
+  text-align: end;
+}
+.jewelMore > a {
+  text-decoration: none;
+  color: black;
+}
+.jewelMore > a:hover,
+.jewelMore > a:active {
+  color: rgb(82, 82, 82);
+  text-decoration: underline;
+}
