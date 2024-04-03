@@ -1,12 +1,18 @@
-header {
+.subHeader {
   min-height: 7rem;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   font-family: var(--overpass);
   /* border: 1px solid; */
   font-size: 1.6rem;
   font-weight: 700;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(250, 248, 248);
+  border-bottom: 1px solid;
+  border-radius: 1rem;
 }
 .logo {
   /* border: 1px solid; */
@@ -41,6 +47,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem;
 }
 .subNavLinks > span {
   color: red;

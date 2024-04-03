@@ -1,11 +1,10 @@
 .corousel {
   width: 70vw;
   height: 20rem;
-  /* border: 1px solid black; */
   margin: 0 auto;
 }
 .parentCorousel {
-  margin: 0 auto;
+  margin: 4rem auto;
   width: 94vw;
   display: flex;
   background-color: rgb(255, 253, 253);

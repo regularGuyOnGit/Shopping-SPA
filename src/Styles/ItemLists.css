@@ -8,45 +8,47 @@
   font-family: var(--overpass);
   font-size: 1.3rem;
 }
-.mainCloths {
+.mainProducts {
   display: grid;
   /* height: 60rem; */
   justify-items: center;
-  align-items: center;
-  grid: repeat(2, 1fr) / repeat(3, 1fr);
+  align-items: stretch;
+  grid: repeat(4, 1fr) / repeat(3, 1fr);
   gap: 1.5rem;
   padding: 1rem;
   background-color: rgb(255, 253, 253);
 }
-.mainCloths > div {
+.mainProducts > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
+  border-bottom: 1px solid;
+  border-radius: 1rem;
 }
-.mainCloths > div > img {
+.mainProducts > div > img {
   width: 16rem;
   height: 14rem;
 }
-.mainCloths > div :nth-child(2) {
+.mainProducts > div :nth-child(2) {
   /* background-color: cadetblue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.mainCloths > div :nth-child(2) :nth-child(1) {
+.mainProducts > div :nth-child(2) :nth-child(1) {
   font-size: 1.2rem;
   font-family: var(--teko);
   font-weight: 800;
 }
-.mainCloths > div :nth-child(2) :nth-child(2) {
+.mainProducts > div :nth-child(2) :nth-child(2) {
   font-size: 1rem;
   font-family: var(--overpass);
   font-weight: 800;
 }
-.mainCloths > div :nth-child(3) {
+.mainProducts > div :nth-child(3) {
   /* background-color: cadetblue; */
   width: 70%;
   margin: 0 auto;
@@ -57,7 +59,7 @@
   font-size: 1.2rem;
   font-family: var(--overpass);
 }
-.mainCloths > div :nth-child(3) :nth-child(2) {
+.mainProducts > div :nth-child(3) :nth-child(2) {
   display: flex;
   width: 20%;
   flex-direction: row;
@@ -65,11 +67,35 @@
   align-items: center;
   /* background-color: red; */
 }
-.mainCloths > div :nth-child(3) :nth-child(2) > span {
+.mainProducts > div :nth-child(3) :nth-child(2) > span {
   color: rgb(255, 199, 0);
 }
-.mainCloths > div :nth-child(4) {
-  font-size: 1.2rem;
+.mainProducts > div :nth-child(4) {
+  font-size: 1.3rem;
   font-family: var(--overpass);
-  background-color: lightblue;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainProducts > div :nth-child(4) > input {
+  width: 20%;
+  padding: 0.1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: var(--teko);
+  border-radius: 1rem;
+}
+.mainProducts > div :nth-child(4) > button {
+  width: 40%;
+  padding: 0.1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: var(--teko);
+  /* border: none; */
+  background-color: rgb(238, 238, 238);
+  border-radius: 1rem;
+}
+.mainProducts > div :nth-child(4) > button:hover {
+  cursor: pointer;
 }

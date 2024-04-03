@@ -1,0 +1,161 @@
+.emptyMsg {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid;
+  /* margin: 10rem auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/SHoop.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.emptyMsg > span {
+  /* width: 60%;
+  height: 50%; */
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--teko);
+  border: 1px solid white;
+  transition: all 1.2s ease-in-out;
+  padding: 1rem;
+  opacity: 0.7;
+}
+.emptyMsg > span:hover {
+  cursor: pointer;
+  transform: scale(2);
+  opacity: 0.9;
+}
+.mainInventory {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.mainLeftInventory {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* border: 1px solid pink; */
+  gap: 2rem;
+}
+.clothesItems {
+  /* border: 2px solid blue; */
+  display: flex;
+
+  flex-direction: column;
+}
+
+.itemInfo {
+  /* border: 2px solid brown; */
+  min-height: 4rem;
+  max-height: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--teko);
+  padding: 0.3rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 8px;
+}
+.itemInfo > img {
+  width: 4rem;
+  height: 3rem;
+}
+.quantity {
+  /* border: 2px solid magenta; */
+  font-family: var(--teko);
+}
+.quantityInfo {
+  min-height: 5rem;
+  max-height: 7rem;
+  /* background-color: aqua; */
+  /* padding: 1.2rem; */
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantityInfo > div {
+  /* border: 1px solid; */
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 8px;
+}
+.quantityInfo > div > button {
+  background-color: cadetblue;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.pricePerItems {
+  /* border: 2px solid indigo; */
+  font-family: var(--teko);
+}
+.priceInfo {
+  /* border: 2px solid blueviolet; */
+  min-height: 5rem;
+  max-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 8px;
+}
+.totalPriceItems {
+  /* border: 2px solid paleturquoise; */
+  font-family: var(--teko);
+}
+.totalPriceInfo {
+  /* border: 2px solid blueviolet; */
+  min-height: 5rem;
+  max-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 8px;
+}
+h3 {
+  text-align: center;
+  font-family: var(--lobster);
+  font-size: 1.3rem;
+}
+.totalPrice,
+.totalQuantity {
+  font-family: var(--teko);
+  font-size: 1.4rem;
+}
+.btn {
+  border: 1px solid salmon;
+  background-color: rgb(23, 183, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn > a {
+  font-family: var(--teko);
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  color: whitesmoke;
+}

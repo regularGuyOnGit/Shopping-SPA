@@ -46,22 +46,22 @@ function Corousel({ products }) {
         <button onClick={coruselChange}>&lArr;</button>
         <div className="corousel">
           {currentCorosel == product1 ? (
-            <Link to={'mensection'}>
+            <Link to={'shopLists'}>
               {' '}
               : <img src={currentCorosel} alt="fashions" />
             </Link>
           ) : currentCorosel == product2 ? (
-            <Link to={'jewelerysection'}>
+            <Link to={'shopLists'}>
               {' '}
               : <img src={currentCorosel} alt="fashions" />
             </Link>
           ) : currentCorosel == product3 ? (
-            <Link to={'electronicsection'}>
+            <Link to={'shopLists'}>
               {' '}
               : <img src={currentCorosel} alt="fashions" />
             </Link>
           ) : currentCorosel == product4 ? (
-            <Link to={'womensection'}>
+            <Link to={'shopLists'}>
               {' '}
               : <img src={currentCorosel} alt="fashions" />
             </Link>
