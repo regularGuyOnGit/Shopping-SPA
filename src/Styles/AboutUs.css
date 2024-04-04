@@ -1,96 +1,134 @@
-.aboutUsPage {
-  width: auto;
-  /* background-color: rgb(238, 238, 238); */
-  /* height: 100vh; */
-  /* border: 10px solid; */
-}
-.aboutUsGrid {
-  display: grid;
-  /* border: 1px solid; */
-  min-height: 42rem;
-  width: 90%;
-  margin: 3rem auto;
-  grid: repeat(6, 1fr) / repeat(5, 1fr);
-  gap: 1rem;
-  font-family: var(--teko);
-  font-size: 1.1rem;
-}
-
-.officePhoto {
-  /* background-color: aqua; */
-  grid-area: 1/1/4/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.officePhoto > img {
-  width: 100%;
-  height: 80%;
-  border-radius: 1.3rem;
-}
-.welcomeMsg {
-  /* background-color: red; */
-  grid-area: 1/3/4/6;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  padding: 1rem;
-  border-radius: 2rem;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-}
-.welcomeMsg ::first-letter {
-  font-size: 2rem;
-  font-family: var(--lobster);
-  text-align: center;
-  text-decoration: underline;
+@media (max-width: 460px) {
+  .aboutUsPage {
+    font-family: var(--teko);
+    padding: 0.6rem;
+  }
+  .home {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home > a > img {
+    width: 50%;
+    height: 50%;
+  }
+  .officePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .officePhoto > img {
+    width: 70%;
+    height: 70%;
+    padding: 0.6rem;
+    border-radius: 2rem;
+  }
+  .handHoldiPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .handHoldiPhoto > img {
+    width: 70%;
+    height: 70%;
+    padding: 0.6rem;
+    border-radius: 2rem;
+  }
 }
 
-/* .missionMsg{
-    background-color: chocolate;
-} */
-.apartMsg {
-  /* background-color: brown; */
-  grid-area: 4/1/7/2;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  padding: 1rem;
-  border-radius: 2rem;
-  border-left: 1px solid;
-  border-right: 1px solid;
-}
-.handHoldiPhoto {
-  /* background-color: yellowgreen; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: 4/4/7/7;
-}
-.handHoldiPhoto > img {
-  width: 100%;
-  height: 80%;
-  border-radius: 1.3rem;
-}
-.joinMsg {
-  /* background-color: violet; */
-  grid-area: 4/2/7/4;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  padding: 1rem;
-  border-radius: 2rem;
-  border-left: 1px solid;
-  border-right: 1px solid;
-}
-.home {
-  padding: 1rem;
-  font-size: 2rem;
-  color: black;
-  /* border: 1px solid; */
-}
-.home > a > img {
-  /* border: 1px solid; */
-  height: 6rem;
-  width: 7rem;
+@media (min-width: 1000px) {
+  .aboutUsPage {
+    width: auto;
+    /* background-color: rgb(238, 238, 238); */
+    /* height: 100vh; */
+    /* border: 10px solid; */
+  }
+  .aboutUsGrid {
+    display: grid;
+    /* border: 1px solid; */
+    min-height: 42rem;
+    width: 90%;
+    margin: 3rem auto;
+    grid: repeat(6, 1fr) / repeat(5, 1fr);
+    gap: 1rem;
+    font-family: var(--teko);
+    font-size: 1.1rem;
+  }
+
+  .officePhoto {
+    /* background-color: aqua; */
+    grid-area: 1/1/4/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .officePhoto > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 1.3rem;
+  }
+  .welcomeMsg {
+    /* background-color: red; */
+    grid-area: 1/3/4/6;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+  }
+  .welcomeMsg ::first-letter {
+    font-size: 2rem;
+    font-family: var(--lobster);
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .apartMsg {
+    /* background-color: brown; */
+    grid-area: 4/1/7/2;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .handHoldiPhoto {
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 4/4/7/7;
+  }
+  .handHoldiPhoto > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 1.3rem;
+  }
+  .joinMsg {
+    /* background-color: violet; */
+    grid-area: 4/2/7/4;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .home {
+    padding: 1rem;
+    font-size: 2rem;
+    color: black;
+    /* border: 1px solid; */
+  }
+  .home > a > img {
+    /* border: 1px solid; */
+    height: 6rem;
+    width: 7rem;
+  }
 }

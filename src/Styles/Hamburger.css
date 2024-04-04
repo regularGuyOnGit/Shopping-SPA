@@ -1,0 +1,25 @@
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 460px) {
+  .hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 0.8rem;
+    background-color: black;
+    transform-origin: 1px;
+    transition:
+      transform 0.3s linear,
+      translate 0.3s linear;
+  }
+}

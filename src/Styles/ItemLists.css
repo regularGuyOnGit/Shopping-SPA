@@ -1,101 +1,204 @@
-.nav {
-  min-height: 7rem;
-  /* background-color: aqua; */
-  border: 1px solid;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--overpass);
-  font-size: 1.3rem;
+@media (max-width: 460px) {
+  .mainProducts {
+    /* border: 2px solid; */
+    display: grid;
+    /* height: 60rem; */
+    justify-items: center;
+    align-items: stretch;
+    grid: repeat(6, 1fr) / repeat(1, 1fr);
+    gap: 0.7rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 253, 253);
+  }
+  .mainProducts > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.7rem;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+  }
+  .mainProducts > div > img {
+    width: 6rem;
+    height: 5rem;
+  }
+  .mainProducts > div :nth-child(2) {
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .mainProducts > div :nth-child(2) :nth-child(1) {
+    font-size: 1rem;
+    font-family: var(--teko);
+    font-weight: 800;
+    /* border: 1px solid; */
+    width: 100%;
+    text-overflow: hidden;
+    text-align: center;
+  }
+  .mainProducts > div :nth-child(2) :nth-child(2) {
+    font-size: 0.8rem;
+    font-family: var(--overpass);
+    font-weight: 800;
+  }
+  .mainProducts > div :nth-child(3) {
+    /* background-color: cadetblue; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: var(--overpass);
+  }
+  .mainProducts > div :nth-child(3) :nth-child(2) {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .mainProducts > div :nth-child(3) :nth-child(2) > span {
+    color: rgb(255, 199, 0);
+  }
+  .mainProducts > div :nth-child(4) {
+    font-size: 1.3rem;
+    font-family: var(--overpass);
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mainProducts > div :nth-child(4) > input {
+    width: 20%;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--teko);
+    border-radius: 1rem;
+  }
+  .mainProducts > div :nth-child(4) > button {
+    width: 30%;
+    padding: 0.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: var(--teko);
+    /* border: none; */
+    background-color: rgb(238, 238, 238);
+    border-radius: 1rem;
+  }
+  .mainProducts > div :nth-child(4) > button:hover {
+    cursor: pointer;
+  }
 }
-.mainProducts {
-  display: grid;
-  /* height: 60rem; */
-  justify-items: center;
-  align-items: stretch;
-  grid: repeat(4, 1fr) / repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 1rem;
-  background-color: rgb(255, 253, 253);
-}
-.mainProducts > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.7rem;
-  border-bottom: 1px solid;
-  border-radius: 1rem;
-}
-.mainProducts > div > img {
-  width: 16rem;
-  height: 14rem;
-}
-.mainProducts > div :nth-child(2) {
-  /* background-color: cadetblue; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.mainProducts > div :nth-child(2) :nth-child(1) {
-  font-size: 1.2rem;
-  font-family: var(--teko);
-  font-weight: 800;
-}
-.mainProducts > div :nth-child(2) :nth-child(2) {
-  font-size: 1rem;
-  font-family: var(--overpass);
-  font-weight: 800;
-}
-.mainProducts > div :nth-child(3) {
-  /* background-color: cadetblue; */
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.2rem;
-  font-family: var(--overpass);
-}
-.mainProducts > div :nth-child(3) :nth-child(2) {
-  display: flex;
-  width: 20%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  /* background-color: red; */
-}
-.mainProducts > div :nth-child(3) :nth-child(2) > span {
-  color: rgb(255, 199, 0);
-}
-.mainProducts > div :nth-child(4) {
-  font-size: 1.3rem;
-  font-family: var(--overpass);
-  /* border: 1px solid; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.mainProducts > div :nth-child(4) > input {
-  width: 20%;
-  padding: 0.1rem;
-  text-align: center;
-  font-size: 1.4rem;
-  font-family: var(--teko);
-  border-radius: 1rem;
-}
-.mainProducts > div :nth-child(4) > button {
-  width: 40%;
-  padding: 0.1rem;
-  text-align: center;
-  font-size: 1.1rem;
-  font-family: var(--teko);
-  /* border: none; */
-  background-color: rgb(238, 238, 238);
-  border-radius: 1rem;
-}
-.mainProducts > div :nth-child(4) > button:hover {
-  cursor: pointer;
+@media (min-width: 1000px) {
+  .nav {
+    min-height: 7rem;
+    /* background-color: aqua; */
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--overpass);
+    font-size: 1.3rem;
+  }
+  .mainProducts {
+    display: grid;
+    /* height: 60rem; */
+    justify-items: center;
+    align-items: stretch;
+    grid: repeat(4, 1fr) / repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 253, 253);
+  }
+  .mainProducts > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border-bottom: 1px solid;
+    border-radius: 1rem;
+  }
+  .mainProducts > div > img {
+    width: 16rem;
+    height: 14rem;
+  }
+  .mainProducts > div :nth-child(2) {
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainProducts > div :nth-child(2) :nth-child(1) {
+    font-size: 1.2rem;
+    font-family: var(--teko);
+    font-weight: 800;
+  }
+  .mainProducts > div :nth-child(2) :nth-child(2) {
+    font-size: 1rem;
+    font-family: var(--overpass);
+    font-weight: 800;
+  }
+  .mainProducts > div :nth-child(3) {
+    /* background-color: cadetblue; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: var(--overpass);
+  }
+  .mainProducts > div :nth-child(3) :nth-child(2) {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .mainProducts > div :nth-child(3) :nth-child(2) > span {
+    color: rgb(255, 199, 0);
+  }
+  .mainProducts > div :nth-child(4) {
+    font-size: 1.3rem;
+    font-family: var(--overpass);
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mainProducts > div :nth-child(4) > input {
+    width: 20%;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--teko);
+    border-radius: 1rem;
+  }
+  .mainProducts > div :nth-child(4) > button {
+    width: 40%;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--teko);
+    /* border: none; */
+    background-color: rgb(238, 238, 238);
+    border-radius: 1rem;
+  }
+  .mainProducts > div :nth-child(4) > button:hover {
+    cursor: pointer;
+  }
 }

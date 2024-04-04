@@ -30,7 +30,7 @@
 }
 .navLinks {
   display: flex;
-  min-width: 20rem;
+  width: 30rem;
   justify-content: space-around;
   flex-direction: row;
   /* border: 1px solid; */
